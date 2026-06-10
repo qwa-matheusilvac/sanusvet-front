@@ -1,0 +1,39 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="32" fill="#0D2C4D"/>
+  <rect x="36" y="36" width="1128" height="558" rx="28" fill="url(#paint0_linear)"/>
+  <circle cx="1010" cy="132" r="88" fill="#D4AF37" fill-opacity="0.18"/>
+  <circle cx="932" cy="472" r="138" fill="#F2E9D0" fill-opacity="0.13"/>
+  <text x="90" y="172" fill="#F2E9D0" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" letter-spacing="6">
+    SANUS VET
+  </text>
+  <text x="90" y="280" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700">
+    Clínica Veterinária
+  </text>
+  <text x="90" y="360" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700">
+    24 Horas em
+  </text>
+  <text x="90" y="440" fill="#D4AF37" font-family="Arial, Helvetica, sans-serif" font-size="70" font-weight="700">
+    São Caetano do Sul
+  </text>
+  <text x="90" y="520" fill="#F2E9D0" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="400">
+    Emergência, consultas, exames, cirurgias e especialistas para o seu pet.
+  </text>
+  <g transform="translate(820 170)">
+    <rect width="250" height="250" rx="48" fill="white" fill-opacity="0.1"/>
+    <path d="M55 187C55 134.533 97.533 92 150 92H173C225.467 92 268 134.533 268 187V209H55V187Z" fill="#F2E9D0"/>
+    <path d="M125 96L102 47C95.656 33.489 109.675 19.195 122.969 25.996L155 42L125 96Z" fill="#F2E9D0"/>
+    <path d="M198 96L221 47C227.344 33.489 213.325 19.195 200.031 25.996L168 42L198 96Z" fill="#F2E9D0"/>
+    <circle cx="152" cy="77" r="48" fill="#F2E9D0"/>
+    <ellipse cx="136" cy="76" rx="7" ry="10" fill="#0D2C4D"/>
+    <ellipse cx="169" cy="76" rx="7" ry="10" fill="#0D2C4D"/>
+    <path d="M146 98H160L153 106L146 98Z" fill="#1E4D7A"/>
+    <path d="M140 122C144.667 127.333 149 130 153 130C157 130 161.333 127.333 166 122" stroke="#1E4D7A" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <defs>
+    <linearGradient id="paint0_linear" x1="72" y1="70" x2="1128" y2="560" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1E4D7A"/>
+      <stop offset="0.55" stop-color="#0D2C4D"/>
+      <stop offset="1" stop-color="#081D33"/>
+    </linearGradient>
+  </defs>
+</svg>
