@@ -108,7 +108,7 @@ export function Footer({ hasLogo }: FooterProps) {
       <div className="section-shell mt-10 border-t border-white/10 pt-6 text-sm text-slate-300">
         <p>
           © {new Date().getFullYear()} {siteConfig.legalName}. CNPJ{" "}
-          {siteConfig.cnpj}. Todos os direitos reservados.
+          . Todos os direitos reservados.
         </p>
       </div>
     </footer>
