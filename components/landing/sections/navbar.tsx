@@ -39,8 +39,14 @@ export function Navbar({ hasLogo }: NavbarProps) {
           <Link href="#especialidades" className="hover:text-[#0D2C4D]">
             Especialidades
           </Link>
+          <Link href="#estrutura" className="hover:text-[#0D2C4D]">
+            Estrutura
+          </Link>
           <Link href="#contato" className="hover:text-[#0D2C4D]">
             Contato
+          </Link>
+          <Link href="#duvidas" className="hover:text-[#0D2C4D]">
+            Dúvidas
           </Link>
         </nav>
     

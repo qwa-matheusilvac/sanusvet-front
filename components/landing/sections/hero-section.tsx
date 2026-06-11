@@ -1,4 +1,4 @@
-import { CalendarDays, Clock3, Microscope } from "lucide-react";
+import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 
 import { FadeIn, HoverCard } from "@/components/motion-primitives";
@@ -6,7 +6,6 @@ import { siteConfig } from "@/components/site-data";
 
 import { ButtonLink } from "../ui/button-link";
 import { HeroBadge } from "../ui/hero-badge";
-import { InfoPill } from "../ui/info-pill";
 
 type HeroSectionProps = {
   hasLogo: boolean;
@@ -27,40 +26,51 @@ export function HeroSection({ hasLogo }: HeroSectionProps) {
           </FadeIn>
 
           <FadeIn delay={0.2}>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-700">
-              {siteConfig.heroDescription} Atendimento completo com consultas,
-              exames veterinários, cirurgias e especialistas para acompanhar seu
-              pet com segurança em todos os momentos.
-            </p>
+            <div className="mt-6 max-w-2xl space-y-4 text-lg leading-8 text-slate-700">
+              <p>
+                A Sanus Vet reúne profissionais especializados e atendimento
+                humanizado para oferecer um cuidado veterinário completo, seguro
+                e acolhedor para cães e gatos em São Caetano.
+              </p>
+              <p>
+                Do cuidado preventivo aos procedimentos de maior complexidade,
+                cada atendimento é conduzido com qualidade técnica,
+                transparência e atenção individualizada para pets e tutores.
+              </p>
+            </div>
           </FadeIn>
 
           <FadeIn delay={0.28}>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-              <ButtonLink href="#agendamento">Agendar Consulta</ButtonLink>
+              <ButtonLink href="#agendamento">Agendar consulta</ButtonLink>
               <ButtonLink href="#contato" variant="secondary">
-                Emergência 24h
+                Emergência 24 horas
               </ButtonLink>
             </div>
           </FadeIn>
 
           <FadeIn delay={0.34}>
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
-              <InfoPill
-                title="24h todos os dias"
-                text="Pronto atendimento para urgências."
-                icon={<Clock3 className="h-4 w-4" />}
-              />
-              <InfoPill
-                title="Exames no local"
-                text="Raio-x, ultrassom e laboratório."
-                icon={<Microscope className="h-4 w-4" />}
-              />
-              <InfoPill
-                title="Equipe especialista"
-                text="Cardiologia, ortopedia e mais."
-                icon={<CalendarDays className="h-4 w-4" />}
-              />
-            </div>
+            <ul className="mt-10 grid gap-4 sm:grid-cols-2">
+              {[
+                "Especialistas em diferentes áreas veterinárias",
+                "Cirurgias de baixa e alta complexidade",
+                "Ortopedia veterinária",
+                "Internação e acompanhamento",
+                "Vacinação e prevenção",
+              ].map((highlight) => (
+                <li
+                  key={highlight}
+                  className="card-depth glass-panel inline-flex items-start gap-3 rounded-[1.5rem] p-5 text-sm leading-6 text-slate-700"
+                >
+                  <span className="mt-0.5 rounded-full bg-[#A7CBE5]/30 p-1 text-[#0D2C4D]">
+                    <CheckCircle2 className="h-4 w-4" />
+                  </span>
+                  <span className="font-semibold text-[#0D2C4D]">
+                    {highlight}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </FadeIn>
         </div>
 

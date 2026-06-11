@@ -7,7 +7,7 @@ export const siteConfig = {
   phoneRaw: "+5511976003601",
   whatsappDisplay: "(11) 97600-3601",
   whatsappRaw: "5511976003601",
-  addressLine: "Rua Joaquim Nabuco, 278 - Santo Antônio",
+  addressLine: "Endereço: R. Joaquim Nabuco, 278 - Santo Antônio, São Caetano do Sul - SP, 09530-120",
   city: "São Caetano do Sul",
   state: "SP",
   postalCode: "09530-120",
@@ -17,9 +17,9 @@ export const siteConfig = {
   cnpj: "00.000.000/0001-00",
   hoursLabel: "24 horas, todos os dias",
   heroTitle:
-    "Seu Pet Merece o Melhor Cuidado: Especializado e 24 Horas em São Caetano do Sul.",
+    "Cuidado completo para quem você mais ama.",
   heroDescription:
-    "A Sanus Vet combina amor e tecnologia para a saúde integral do seu melhor amigo.",
+    "A Sanus Vet reúne profissionais especializados e atendimento humanizado para oferecer um cuidado veterinário completo, seguro e acolhedor para cães e gatos em São Caetano.",
   servicesSubtitle:
     "Cuidando de cada detalhe, das vacinas às cirurgias.",
   clinicDescription:

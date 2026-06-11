@@ -2,12 +2,15 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { ClinicShowcase } from "./sections/clinic-showcase";
+import { FAQSection } from "./sections/faq-section";
+import { FounderSection } from "./sections/founder-section";
 import { FinalCTA } from "./sections/final-cta";
 import { Footer } from "./sections/footer";
 import { HeroSection } from "./sections/hero-section";
 import { Navbar } from "./sections/navbar";
 import { ServicesGrid } from "./sections/services-grid";
 import { SpecialtiesSection } from "./sections/specialties-section";
+import { StructureSection } from "./sections/structure-section";
 import { TestimonialsCarousel } from "./sections/testimonials-carousel";
 
 export function LandingPage() {
@@ -16,6 +19,9 @@ export function LandingPage() {
   );
   const hasClinicImage = fs.existsSync(
     path.join(process.cwd(), "public", "image_2.png"),
+  );
+  const hasFounderImage = fs.existsSync(
+    path.join(process.cwd(), "public", "founder.jpeg"),
   );
 
   return (
@@ -26,7 +32,10 @@ export function LandingPage() {
         <ServicesGrid />
         <SpecialtiesSection />
         <ClinicShowcase hasClinicImage={hasClinicImage} />
+        <StructureSection />
+        <FounderSection hasFounderImage={hasFounderImage} />
         <TestimonialsCarousel />
+        <FAQSection />
         <FinalCTA />
       </main>
       <Footer hasLogo={hasLogo} />
