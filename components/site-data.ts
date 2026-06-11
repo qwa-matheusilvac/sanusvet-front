@@ -3,8 +3,8 @@ export const siteConfig = {
   legalName: "Sanus Vet - Saúde Animal",
   url: "https://www.hospitalsanusvet.com.br/",
   email: "contato@sanusvet.com.br",
-  phoneDisplay: "(11) 97600-3601",
-  phoneRaw: "+5511976003601",
+  phoneDisplay: "(11) 2897-7372",
+  phoneRaw: "+55112897-7372",
   whatsappDisplay: "(11) 97600-3601",
   whatsappRaw: "5511976003601",
   instagramUrl:
