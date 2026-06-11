@@ -254,6 +254,22 @@ footer {
   transform: perspective(1200px) rotateX(0deg) rotateY(0deg) translateY(-6px);
 }
 
+.hero-background-image {
+  object-position: 42% center;
+}
+
+@media (min-width: 640px) {
+  .hero-background-image {
+    object-position: 60% center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-background-image {
+    object-position: 60% center;
+  }
+}
+
 @keyframes fadeUp {
   to {
     opacity: 1;

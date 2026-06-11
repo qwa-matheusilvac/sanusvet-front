@@ -7,6 +7,8 @@ export const siteConfig = {
   phoneRaw: "+5511976003601",
   whatsappDisplay: "(11) 97600-3601",
   whatsappRaw: "5511976003601",
+  instagramUrl:
+    "https://www.instagram.com/hospitalsanus.vet?igsh=MTUwaGJhcjlxbDJjeQ%3D%3D&utm_source=qr",
   addressLine: "Endereço: R. Joaquim Nabuco, 278 - Santo Antônio, São Caetano do Sul - SP, 09530-120",
   city: "São Caetano do Sul",
   state: "SP",

@@ -17,6 +17,9 @@ export function LandingPage() {
   const hasLogo = fs.existsSync(
     path.join(process.cwd(), "public", "image_0.png"),
   );
+  const hasHeroClinicImage = fs.existsSync(
+    path.join(process.cwd(), "public", "image.png"),
+  );
   const hasClinicImage = fs.existsSync(
     path.join(process.cwd(), "public", "image_2.png"),
   );
@@ -28,7 +31,7 @@ export function LandingPage() {
     <div className="flex min-h-screen flex-col bg-white text-black">
       <Navbar hasLogo={hasLogo} />
       <main className="relative flex-1 overflow-hidden">
-        <HeroSection hasLogo={hasLogo} />
+        <HeroSection hasLogo={hasLogo} hasClinicImage={hasHeroClinicImage} />
         <ServicesGrid />
         <SpecialtiesSection />
         <ClinicShowcase hasClinicImage={hasClinicImage} />

@@ -82,14 +82,14 @@ export function SpecialtiesSection() {
   return (
     <section
       id="especialidades"
-      className="surface-grid relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(20,72,120,0.4),transparent_24%),linear-gradient(135deg,#071727_0%,#08203a_54%,#04101d_100%)] py-20 text-white"
+      className="surface-grid relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(167,203,229,0.18),transparent_24%),linear-gradient(135deg,#0D2C4D_0%,#12395b_54%,#081D33_100%)] py-20 text-white"
     >
       <div className="floating-orb absolute -left-10 top-12 h-40 w-40 rounded-full bg-[#1E4D7A]/30 blur-3xl" />
-      <div className="floating-orb-delayed absolute right-0 top-0 h-52 w-52 rounded-full bg-[#ff7a59]/10 blur-3xl" />
+      <div className="floating-orb-delayed absolute right-0 top-0 h-52 w-52 rounded-full bg-[#D4AF37]/10 blur-3xl" />
       <div className="section-shell">
         <div className="max-w-3xl">
           <FadeIn>
-            <span className="text-sm font-bold uppercase tracking-[0.28em] text-[#ff8d6d]">
+            <span className="text-sm font-bold uppercase tracking-[0.28em] text-[#D4AF37]">
               Atenção, tutor
             </span>
           </FadeIn>
@@ -112,8 +112,8 @@ export function SpecialtiesSection() {
 
             return (
               <HoverCard key={card.title} delay={0.04 * index}>
-                <article className="card-depth group flex h-full flex-col rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(10,36,63,0.92)_0%,rgba(8,28,49,0.94)_100%)] p-6 shadow-[0_24px_60px_rgba(0,0,0,0.2)] backdrop-blur-xl">
-                  <div className="inline-flex w-fit rounded-2xl bg-white/8 p-4 text-[#ff8d6d] shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-transform duration-300 group-hover:scale-110">
+                <article className="card-depth group flex h-full flex-col rounded-[1.75rem] border border-white/10 bg-[linear-gradient(180deg,rgba(13,44,77,0.9)_0%,rgba(8,29,51,0.94)_100%)] p-6 shadow-[0_24px_60px_rgba(0,0,0,0.2)] backdrop-blur-xl">
+                  <div className="inline-flex w-fit rounded-2xl bg-white/8 p-4 text-[#D4AF37] shadow-[inset_0_1px_0_rgba(255,255,255,0.08)] transition-transform duration-300 group-hover:scale-110">
                     <Icon className="h-8 w-8" />
                   </div>
                   <h3 className="mt-5 text-2xl font-bold leading-tight text-white">
@@ -123,7 +123,7 @@ export function SpecialtiesSection() {
                     {card.description}
                   </p>
                   <div className="mt-6">
-                    <span className="inline-flex items-center rounded-full bg-[linear-gradient(180deg,rgba(255,122,89,0.22)_0%,rgba(255,122,89,0.12)_100%)] px-4 py-2 text-sm font-bold text-[#ff8d6d] ring-1 ring-[#ff8d6d]/20">
+                    <span className="inline-flex items-center rounded-full bg-[linear-gradient(180deg,rgba(212,175,55,0.22)_0%,rgba(212,175,55,0.12)_100%)] px-4 py-2 text-sm font-bold text-[#F2E9D0] ring-1 ring-[#D4AF37]/25">
                       {card.status}
                     </span>
                   </div>

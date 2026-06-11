@@ -6,6 +6,7 @@ import {
   Phone,
 } from "lucide-react";
 import Image from "next/image";
+import { FaInstagram } from "react-icons/fa6";
 
 import { siteConfig } from "@/components/site-data";
 
@@ -68,6 +69,17 @@ export function Footer({ hasLogo }: FooterProps) {
                 </a>
               </li>
               <li>
+                <a
+                  href={siteConfig.instagramUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex items-start gap-3 hover:text-white"
+                >
+                  <FaInstagram className="mt-1 h-5 w-5 shrink-0 text-[#A7CBE5]" />
+                  @hospitalsanus.vet
+                </a>
+              </li>
+              <li>
                 <span className="inline-flex items-start gap-3">
                   <MapPin className="mt-1 h-5 w-5 shrink-0 text-[#A7CBE5]" />
                   {siteConfig.addressLine}
@@ -98,8 +110,8 @@ export function Footer({ hasLogo }: FooterProps) {
 
       <div className="section-shell mt-10 border-t border-white/10 pt-6 text-sm text-slate-300">
         <p>
-          © {new Date().getFullYear()} {siteConfig.legalName}.
-          . Todos os direitos reservados.
+          © {new Date().getFullYear()} {siteConfig.legalName}. Todos os direitos
+          reservados.
         </p>
       </div>
     </footer>
