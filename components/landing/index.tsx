@@ -34,7 +34,6 @@ export function LandingPage() {
         <ClinicShowcase hasClinicImage={hasClinicImage} />
         <StructureSection />
         <FounderSection hasFounderImage={hasFounderImage} />
-        <TestimonialsCarousel />
         <FAQSection />
         <FinalCTA />
       </main>

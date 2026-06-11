@@ -49,29 +49,7 @@ export function HeroSection({ hasLogo }: HeroSectionProps) {
             </div>
           </FadeIn>
 
-          <FadeIn delay={0.34}>
-            <ul className="mt-10 grid gap-4 sm:grid-cols-2">
-              {[
-                "Especialistas em diferentes áreas veterinárias",
-                "Cirurgias de baixa e alta complexidade",
-                "Ortopedia veterinária",
-                "Internação e acompanhamento",
-                "Vacinação e prevenção",
-              ].map((highlight) => (
-                <li
-                  key={highlight}
-                  className="card-depth glass-panel inline-flex items-start gap-3 rounded-[1.5rem] p-5 text-sm leading-6 text-slate-700"
-                >
-                  <span className="mt-0.5 rounded-full bg-[#A7CBE5]/30 p-1 text-[#0D2C4D]">
-                    <CheckCircle2 className="h-4 w-4" />
-                  </span>
-                  <span className="font-semibold text-[#0D2C4D]">
-                    {highlight}
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </FadeIn>
+          
         </div>
 
         <HoverCard delay={0.2} className="relative">

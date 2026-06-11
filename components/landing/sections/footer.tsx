@@ -48,28 +48,28 @@ export function Footer({ hasLogo }: FooterProps) {
             <h3 className="text-sm font-bold uppercase tracking-[0.28em] text-[#A7CBE5]">
               Contatos
             </h3>
-            <ul className="mt-4 space-y-3 text-slate-200">
+            <ul className="mt-4 space-y-4 text-lg leading-8 text-slate-200">
               <li>
                 <a
                   href={`tel:${siteConfig.phoneRaw}`}
-                  className="inline-flex items-center gap-3 hover:text-white"
+                  className="inline-flex items-start gap-3 hover:text-white"
                 >
-                  <Phone className="h-4 w-4 text-[#A7CBE5]" />
+                  <Phone className="mt-1 h-5 w-5 shrink-0 text-[#A7CBE5]" />
                   Telefone 24h: {siteConfig.phoneDisplay}
                 </a>
               </li>
               <li>
                 <a
                   href={`https://wa.me/${siteConfig.whatsappRaw}`}
-                  className="inline-flex items-center gap-3 hover:text-white"
+                  className="inline-flex items-start gap-3 hover:text-white"
                 >
-                  <MessageCircle className="h-4 w-4 text-[#A7CBE5]" />
+                  <MessageCircle className="mt-1 h-5 w-5 shrink-0 text-[#A7CBE5]" />
                   WhatsApp: {siteConfig.whatsappDisplay}
                 </a>
               </li>
               <li>
-                <span className="inline-flex items-center gap-3">
-                  <MapPin className="h-4 w-4 text-[#A7CBE5]" />
+                <span className="inline-flex items-start gap-3">
+                  <MapPin className="mt-1 h-5 w-5 shrink-0 text-[#A7CBE5]" />
                   {siteConfig.addressLine}
                 </span>
               </li>
@@ -81,25 +81,16 @@ export function Footer({ hasLogo }: FooterProps) {
             <h3 className="text-sm font-bold uppercase tracking-[0.28em] text-[#A7CBE5]">
               Atendimento
             </h3>
-            <ul className="mt-4 space-y-3 text-slate-200">
-              <li className="inline-flex items-center gap-3">
-                <Clock3 className="h-4 w-4 text-[#A7CBE5]" />
+            <ul className="mt-4 space-y-4 text-lg leading-8 text-slate-200">
+              <li className="inline-flex items-start gap-3">
+                <Clock3 className="mt-1 h-5 w-5 shrink-0 text-[#A7CBE5]" />
                 {siteConfig.hoursLabel}
               </li>
-              <li className="inline-flex items-center gap-3">
-                <CalendarDays className="h-4 w-4 text-[#A7CBE5]" />
+              <li className="inline-flex items-start gap-3">
+                <CalendarDays className="mt-1 h-5 w-5 shrink-0 text-[#A7CBE5]" />
                 Consultas, exames e cirurgias
               </li>
-              <li>Especialidades veterinárias</li>
-              <li>
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="inline-flex items-center gap-3 hover:text-white"
-                >
-                  <MessageCircle className="h-4 w-4 text-[#A7CBE5]" />
-                  {siteConfig.email}
-                </a>
-              </li>
+              <li>Especialidades veterinárias</li>            
             </ul>
           </div>
         </div>
@@ -107,7 +98,7 @@ export function Footer({ hasLogo }: FooterProps) {
 
       <div className="section-shell mt-10 border-t border-white/10 pt-6 text-sm text-slate-300">
         <p>
-          © {new Date().getFullYear()} {siteConfig.legalName}. CNPJ{" "}
+          © {new Date().getFullYear()} {siteConfig.legalName}.
           . Todos os direitos reservados.
         </p>
       </div>

@@ -4,13 +4,16 @@ import { FadeIn } from "@/components/motion-primitives";
 import { siteConfig } from "@/components/site-data";
 
 import { ButtonLink } from "../ui/button-link";
-import { FeatureItem } from "../ui/feature-item";
 
 type ClinicShowcaseProps = {
   hasClinicImage: boolean;
 };
 
 export function ClinicShowcase({ hasClinicImage }: ClinicShowcaseProps) {
+  const mapQuery = encodeURIComponent(
+    `${siteConfig.addressLine}, ${siteConfig.city}, ${siteConfig.state}, ${siteConfig.postalCode}`,
+  );
+
   return (
     <section className="relative bg-white py-20">
       <div className="floating-orb absolute left-10 bottom-10 h-28 w-28 rounded-full bg-[#A7CBE5]/18 blur-3xl" />
@@ -54,29 +57,18 @@ export function ClinicShowcase({ hasClinicImage }: ClinicShowcaseProps) {
             </h2>
           </FadeIn>
           <FadeIn delay={0.16}>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              {siteConfig.clinicDescription}
-            </p>
-          </FadeIn>
-
-          <FadeIn delay={0.24}>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2">
-              <FeatureItem
-                title="Centro cirúrgico"
-                text="Equipamentos modernos e protocolos seguros."
+            <div className="mt-5 overflow-hidden rounded-[1.75rem] border border-slate-200 bg-white shadow-[0_20px_60px_rgba(13,44,77,0.08)]">
+              <iframe
+                title="Mapa da Sanus Vet"
+                src={`https://www.google.com/maps?q=${mapQuery}&z=16&output=embed`}
+                className="h-[360px] w-full border-0"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
-              <FeatureItem
-                title="Diagnóstico por imagem"
-                text="Raio-x e ultrassom para decisões rápidas."
-              />
-              <FeatureItem
-                title="Atendimento humanizado"
-                text="Cuidado próximo para tutores e pets."
-              />
-              <FeatureItem
-                title="Fluxo 24 horas"
-                text="Estrutura pronta para rotina e emergência."
-              />
+              <div className="border-t border-slate-100 px-5 py-4 text-sm text-slate-600">
+                {siteConfig.addressLine}, {siteConfig.city} - {siteConfig.state},{" "}
+                {siteConfig.postalCode}
+              </div>
             </div>
           </FadeIn>
 
