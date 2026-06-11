@@ -107,7 +107,7 @@ export function HeroSection({ hasLogo, hasClinicImage }: HeroSectionProps) {
                   <Heart className="h-4 w-4 text-[#C69B1D]" />
                 </div>
                 <p className="text-base leading-8 text-slate-700 sm:text-lg sm:leading-9">
-                  Para quem considera seu pet parte da família, <br/>
+                  Para quem considera seu pet parte da família, 
                   a Sanus Vet é a
                   clínica veterinária que cuida hoje para garantir mais saúde
                   amanhã, porque acredita que confiança se constrói com

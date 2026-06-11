@@ -1,11 +1,11 @@
 import {
   AlertTriangle,
   Bone,
+  Dog,
   Droplets,
   HeartPulse,
   PersonStanding,
   Pill,
-  Skull,
   Wind,
   type LucideIcon,
 } from "lucide-react";
@@ -39,12 +39,12 @@ const emergencyCards: EmergencyCard[] = [
     description:
       "Episódios seguidos podem indicar intoxicação, obstrução, torção gástrica ou outra urgência que precisa de avaliação rápida.",
     status: "Atendimento urgente",
-    icon: Skull,
+    icon: Dog,
   },
   {
     title: "Incapacidade de se levantar ou andar",
     description:
-      "Queda repentina, arrasto das patas, desequilíbrio ou imobilidade podem ser sinais de dor intensa, fratura, crise neurológica ou trauma.",
+      "Queda repentina, arrasto das patas, desequilíbrio ou imobilidade podem ser sinais de dor intensa, fratura, crise neurológica, trauma ou lesão na coluna.",
     status: "Atendimento urgente",
     icon: PersonStanding,
   },

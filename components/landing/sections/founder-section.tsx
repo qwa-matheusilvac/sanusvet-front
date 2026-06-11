@@ -60,7 +60,7 @@ export function FounderSection({ hasFounderImage }: FounderSectionProps) {
           </FadeIn>
           <FadeIn delay={0.14}>
             <p className="mt-3 text-lg font-semibold text-slate-700">
-              Fundador da Sanus Vet | Cirurgia e Ortopedia Veterinária
+              Fundador da Sanus Vet Animal | Cirurgia e Ortopedia Veterinária
             </p>
           </FadeIn>
 
@@ -86,7 +86,7 @@ export function FounderSection({ hasFounderImage }: FounderSectionProps) {
                 Veterinária e Cirurgias Avançadas do Sistema Urinário.
               </p>
               <p>
-                Na Sanus Vet, lidera uma estrutura pensada para proporcionar
+                A Sanus Vet Animal, lidera uma estrutura pensada para proporcionar
                 diagnóstico preciso, procedimentos seguros e acompanhamento
                 próximo em cada etapa do tratamento, sempre com foco na
                 recuperação, no bem-estar e na qualidade de vida dos pets.
