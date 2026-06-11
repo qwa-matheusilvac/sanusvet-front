@@ -21,59 +21,59 @@ type EmergencyCard = {
 
 const emergencyCards: EmergencyCard[] = [
   {
-    title: "Respiracao acelerada ou com esforco",
+    title: "Respiração acelerada ou com esforço",
     description:
-      "Boca aberta, flancos muito expandidos, lingua arroxeada ou esforco para respirar podem indicar falta de oxigenio, problema cardiaco ou crise respiratoria.",
-    status: "Emergencia imediata",
+      "Boca aberta, flancos muito expandidos, língua arroxeada ou esforço para respirar podem indicar falta de oxigênio, problema cardíaco ou crise respiratória.",
+    status: "Emergência imediata",
     icon: Wind,
   },
   {
     title: "Gengivas brancas, cinzas ou azuladas",
     description:
-      "Coloracao palida, acinzentada ou azulada pode ser sinal de choque, anemia grave ou alteracao circulatoria.",
-    status: "Emergencia imediata",
+      "Coloração pálida, acinzentada ou azulada pode ser sinal de choque, anemia grave ou alteração circulatória.",
+    status: "Emergência imediata",
     icon: HeartPulse,
   },
   {
-    title: "Vomito repetido, com sangue ou espuma",
+    title: "Vômito repetido, com sangue ou espuma",
     description:
-      "Episodios seguidos podem indicar intoxicacao, obstrucao, torcao gastrica ou outra urgencia que precisa de avaliacao rapida.",
+      "Episódios seguidos podem indicar intoxicação, obstrução, torção gástrica ou outra urgência que precisa de avaliação rápida.",
     status: "Atendimento urgente",
     icon: Skull,
   },
   {
     title: "Incapacidade de se levantar ou andar",
     description:
-      "Queda repentina, arrasto das patas, desequilibrio ou imobilidade podem ser sinais de dor intensa, fratura, crise neurologica ou trauma.",
+      "Queda repentina, arrasto das patas, desequilíbrio ou imobilidade podem ser sinais de dor intensa, fratura, crise neurológica ou trauma.",
     status: "Atendimento urgente",
     icon: PersonStanding,
   },
   {
     title: "Diarreia intensa ou com sangue",
     description:
-      "Principalmente quando acompanhada de vomito, pode causar desidratacao rapida e agravamento importante, em especial em filhotes e idosos.",
+      "Principalmente quando acompanhada de vômito, pode causar desidratação rápida e agravamento importante, em especial em filhotes e idosos.",
     status: "Atendimento urgente",
     icon: Droplets,
   },
   {
     title: "Dificuldade para urinar",
     description:
-      "Fazer forca para urinar, chorar, sair pouca urina ou nao conseguir urinar pode indicar obstrucao urinaria, especialmente grave em gatos machos.",
-    status: "Emergencia imediata",
+      "Fazer força para urinar, chorar, sair pouca urina ou não conseguir urinar pode indicar obstrução urinária, especialmente grave em gatos machos.",
+    status: "Emergência imediata",
     icon: Bone,
   },
   {
-    title: "Convulsao, desmaio ou queda",
+    title: "Convulsão, desmaio ou queda",
     description:
-      "Tremores, perda de consciencia, rigidez, colapso ou desmaio exigem avaliacao rapida, mesmo que o pet pareca melhorar depois.",
-    status: "Emergencia imediata",
+      "Tremores, perda de consciência, rigidez, colapso ou desmaio exigem avaliação rápida, mesmo que o pet pareça melhorar depois.",
+    status: "Emergência imediata",
     icon: AlertTriangle,
   },
   {
-    title: "Intoxicacao ou corpo estranho",
+    title: "Intoxicação ou corpo estranho",
     description:
-      "Se o pet ingeriu remedio, chocolate, planta toxica, produto quimico ou objeto estranho, procure ajuda sem esperar os sintomas piorarem.",
-    status: "Emergencia imediata",
+      "Se o pet ingeriu remédio, chocolate, planta tóxica, produto químico ou objeto estranho, procure ajuda sem esperar os sintomas piorarem.",
+    status: "Emergência imediata",
     icon: Pill,
   },
 ];
@@ -90,18 +90,18 @@ export function SpecialtiesSection() {
         <div className="max-w-3xl">
           <FadeIn>
             <span className="text-sm font-bold uppercase tracking-[0.28em] text-[#ff8d6d]">
-              Atencao, tutor
+              Atenção, tutor
             </span>
           </FadeIn>
           <FadeIn delay={0.08}>
             <h2 className="mt-4 text-3xl font-bold sm:text-4xl lg:text-5xl">
-              Seu pet esta bem agora?
+              Seu pet está bem agora?
             </h2>
           </FadeIn>
           <FadeIn delay={0.16}>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-slate-100/80">
-              Alguns sinais podem parecer pequenos, mas indicam emergencia. Se
-              voce reconhecer qualquer um desses, nao espere ate amanha.
+              Alguns sinais podem parecer pequenos, mas indicam emergência. Se
+              você reconhecer qualquer um desses, não espere até amanhã.
             </p>
           </FadeIn>
         </div>
