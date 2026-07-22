@@ -1,41 +1,15 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
 import { AnimatePresence, motion } from "framer-motion";
 import { HelpCircle, Minus, Plus } from "lucide-react";
 
 import { FadeIn } from "@/components/motion-primitives";
+import { faqItems } from "@/components/site-data";
 import { cn } from "@/lib/utils";
 
-type FAQItem = {
-  question: string;
-  answer: string;
-};
-
 export function FAQSection() {
-  const items = useMemo<FAQItem[]>(
-    () => [
-      {
-        question: "Quais serviços a Sanus Vet oferece?",
-        answer:
-          "Oferecemos atendimento clínico, cirurgias, exames laboratoriais, consultas de especialidades, vacinação, internação e muito mais.",
-      },
-      {
-        question: "Quais os horários de atendimento?",
-        answer:
-          "Nosso hospital funciona de segunda a sábado, das 8h às 23h. Atendemos emergências 24 horas por dia.",
-      },
-      {
-        question:
-          "É necessário agendar consulta ou atendem por ordem de chegada?",
-        answer:
-          "Para garantir um atendimento mais ágil, recomendamos o agendamento prévio. No entanto, também atendemos casos de emergência sem a necessidade de agendamento.",
-      },
-    ],
-    [],
-  );
-
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -63,7 +37,7 @@ export function FAQSection() {
         </div>
 
         <div className="mx-auto mt-12 grid max-w-4xl gap-5">
-          {items.map((item, index) => {
+          {faqItems.map((item, index) => {
             const isOpen = openIndex === index;
             const toggle = () =>
               setOpenIndex((current) => (current === index ? null : index));

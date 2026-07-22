@@ -2,6 +2,7 @@ export const siteConfig = {
   name: "Sanus Vet",
   legalName: "Sanus Vet - Saúde Animal",
   url: "https://www.hospitalsanusvet.com.br/",
+  googleAnalyticsId: "G-KTJJ6MF4SZ",
   email: "contato@sanusvet.com.br",
   phoneDisplay: "(11) 2897-7372",
   phoneRaw: "+55112897-7372",
@@ -27,6 +28,25 @@ export const siteConfig = {
   clinicDescription:
     "Estrutura moderna, atendimento acolhedor e tecnologia de ponta para consultas, exames, internação, cirurgias e acompanhamento especializado em todas as fases da vida do seu pet.",
 };
+
+export const faqItems = [
+  {
+    question: "Quais serviços a Sanus Vet oferece?",
+    answer:
+      "Oferecemos atendimento clínico, cirurgias, exames laboratoriais, consultas de especialidades, vacinação, internação e muito mais.",
+  },
+  {
+    question: "Quais os horários de atendimento?",
+    answer:
+      "Nosso hospital funciona de segunda a sábado, das 8h às 23h. Atendemos emergências 24 horas por dia.",
+  },
+  {
+    question:
+      "É necessário agendar consulta ou atendem por ordem de chegada?",
+    answer:
+      "Para garantir um atendimento mais ágil, recomendamos o agendamento prévio. No entanto, também atendemos casos de emergência sem a necessidade de agendamento.",
+  },
+] as const;
 
 export const medicalSpecialties = [
   "VeterinaryCardiology",

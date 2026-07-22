@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import Script from "next/script";
+
+import { siteConfig } from "@/components/site-data";
+
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -9,10 +13,17 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.hospitalsanusvet.com.br/"),
-  title: "Sanus Vet | Clínica Veterinária 24 Horas em São Caetano do Sul",
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: "Sanus Vet | Clínica Veterinária 24 Horas em São Caetano do Sul",
+    template: "%s | Sanus Vet",
+  },
+  applicationName: siteConfig.name,
   description:
     "A Sanus Vet é sua clínica veterinária de referência 24 horas em São Caetano do Sul. Equipe especializada, tecnologia de ponta e cuidado integral para seu pet.",
+  category: "Saúde animal",
+  classification: "Clínica veterinária",
+  referrer: "origin-when-cross-origin",
   keywords: [
     "clínica veterinária São Caetano do Sul",
     "veterinário 24h São Caetano",
@@ -27,8 +38,14 @@ export const metadata: Metadata = {
     "raio-x pet",
     "ultrassom pet",
   ],
+  authors: [{ name: siteConfig.legalName, url: siteConfig.url }],
+  creator: siteConfig.legalName,
+  publisher: siteConfig.legalName,
   alternates: {
-    canonical: "https://www.hospitalsanusvet.com.br/",
+    canonical: "/",
+  },
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
   },
   icons: {
     icon: [
@@ -40,14 +57,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: "https://www.hospitalsanusvet.com.br/",
-    siteName: "Sanus Vet",
+    url: "/",
+    siteName: siteConfig.name,
     title: "Sanus Vet | Clínica Veterinária 24 Horas em São Caetano do Sul",
     description:
       "Clínica veterinária 24 horas em São Caetano do Sul com equipe especializada, exames, cirurgias e atendimento humanizado para seu pet.",
     images: [
       {
-        url: "/image_0.png",
+        url: "/og-sanusvet.svg",
         width: 1200,
         height: 630,
         alt: "Sanus Vet - Clínica Veterinária 24 Horas em São Caetano do Sul",
@@ -86,6 +103,22 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col" suppressHydrationWarning>
+        {siteConfig.googleAnalyticsId ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.googleAnalyticsId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${siteConfig.googleAnalyticsId}');
+              `}
+            </Script>
+          </>
+        ) : null}
         {children}
       </body>
     </html>
