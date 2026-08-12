@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "Sanus Vet",
   legalName: "Sanus Vet - Saúde Animal",
   url: "https://www.hospitalsanusvet.com.br/",
-  googleAnalyticsId: "G-KTJJ6MF4SZ",
+  googleAnalyticsId: "W-18052274013",
   email: "contato@sanusvet.com.br",
   phoneDisplay: "(11) 2897-7372",
   phoneRaw: "+55112897-7372",
